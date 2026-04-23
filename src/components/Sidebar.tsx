@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import AppLogo from '@/components/ui/AppLogo';
-import { LayoutDashboard, Package, ScrollText, ChevronLeft, ChevronRight, Settings, LogOut, ShieldCheck,  } from 'lucide-react';
+import { LayoutDashboard, Package, ScrollText, ChevronLeft, ChevronRight, Settings, LogOut, ShieldCheck, BookUser } from 'lucide-react';
 import Icon from '@/components/ui/AppIcon';
 
 
@@ -29,6 +29,13 @@ const NAV_ITEMS = [
     href: '/transaction-ledger',
     icon: ScrollText,
     badge: '3',
+  },
+  {
+    key: 'nav-customer-log',
+    label: 'Customer Log',
+    href: '/customer-log',
+    icon: BookUser,
+    badge: null,
   },
 ];
 
